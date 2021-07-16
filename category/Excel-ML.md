@@ -1,7 +1,6 @@
 ---
 layout: category
-title: Fancy Title
-category: My Category
+title: Excel 머신러닝
 ---
 
 Sample category page. You need to create a page for each category.
