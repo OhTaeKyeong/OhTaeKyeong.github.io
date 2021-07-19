@@ -1,13 +1,9 @@
 ---
 layout: page
-title: About
+title: 소개
 sidebar_link: true
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
+  머신러닝, 인공지능과 기타 프로그래밍을 공부하는 개인 블로그입니다.
 </p>
-
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
