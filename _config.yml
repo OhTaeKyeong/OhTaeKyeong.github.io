@@ -3,9 +3,9 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            TaeKyeong..
-tagline:          'tk theme'
-description:      'The <a href="https://OhTaeKyeong.github.io" target="_blank">TK</a> theme for <a href="https://OhTaeKyeong.github.io" target="_blank">Jekyll</a>, refreshed.'
+title:            OhTaeK
+tagline:          'TK'
+description:      '머신러닝과 인공지능을 공부하는 개인 블로그'
 url:              https://OhTaeKyeong.github.io
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
