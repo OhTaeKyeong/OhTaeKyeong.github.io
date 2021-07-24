@@ -1,12 +1,12 @@
 <div class="page-control">
 	<div style="float: left;">
 		{% if page.previous.url %}
-		<a id="prev" class="button" href="{{ page.previous.url }}">&laquo; {{ page.previous }}</a>
+		<a id="prev" class="button" href="{{ page.previous.url }}">&laquo; 이전 글</a>
 		{% endif %}
 	</div>
 	<div style="float: right;">
 		{% if page.next.url %}
-		<a id="next" class="button" href="{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+		<a id="next" class="button" href="{{ page.next.url }}">다음 글 &raquo;</a>
 		{% endif %}
 	</div>
 </div>
