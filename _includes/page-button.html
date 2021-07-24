@@ -1,7 +1,7 @@
 <div class="page-control">
 	<div style="float: left;">
 		{% if page.previous.url %}
-		<a id="prev" class="button" href="{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+		<a id="prev" class="button" href="{{ page.previous.url }}">&laquo; {{ page.previous }}</a>
 		{% endif %}
 	</div>
 	<div style="float: right;">
@@ -10,8 +10,3 @@
 		{% endif %}
 	</div>
 </div>
-
-<script>
-    console.log(page.previous)
-    console.log(page.next)
-</script>
