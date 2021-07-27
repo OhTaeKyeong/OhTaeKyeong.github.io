@@ -3,13 +3,14 @@
 	<div style="display: flex; justify-content: space-between;">
 	<div>
 		{% if page.previous.url %}
-		<a id="prev" class="button" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; 이전 글</a>
+		<button type="button" onclick="location.href='{{ page.previous.url }}'" title="{{ page.previous.title }}">&laquo; 이전 글</button>
 		{% endif %}
 	</div>
 	<div>
 		{% if page.next.url %}
-		<a id="next" class="button" href="{{ page.next.url }}" title="{{ page.next.title }}">다음 글 &raquo;</a>
-		{% endif %}
+		<button type="button" onclick="location.href='{{ page.next.url }}'" title="{{ page.next.title }}">다음 글 &raquo;</button>		{% endif %}
 	</div>
 	</div>
 </div>
+
+
