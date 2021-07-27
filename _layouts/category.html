@@ -7,10 +7,10 @@ layout: page
 {% endunless %}
 
 <table border="1">
+  <th>글제목</th>
+  <th>작성일</th>
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-  <th>제목</th>
-  <th>날짜</th>
   <tr>
     <a href="{{ post.url | relative_url }}">
     <td>
