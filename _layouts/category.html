@@ -8,7 +8,7 @@ layout: page
 
 <table style="border: 1;">
   <thead>
-    <tr style="text-align: center;">
+    <tr>
       <th>글제목</th>
       <th>작성일</th>
     </tr>
@@ -16,9 +16,9 @@ layout: page
   {% assign category = page.category | default: page.title %}
   <tbody>
     {% for post in site.categories[category] %}
-    <tr style="text-align: center;">
+    <tr>
       <td>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}-{{post.excerpt}}</a>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}<small>- {{post.excerpt}}</small></a>
       </td>
       <td>
         <small>{{ post.date | date_to_string }}</small>
