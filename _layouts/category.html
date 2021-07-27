@@ -3,19 +3,22 @@ layout: page
 ---
 
 {% unless page.content == '' %}
-  {{ content }}
+{{ content }}
 {% endunless %}
 
-<ul class="posts-list">
+<table border="1">
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-          <small>{{ post.date | date_to_string }}</small>
-        </a>
-      </h3>
-    </li>
+  <tr>
+    <td>
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}</a>
+    </td>
+    <td>
+      <a href="{{ post.url | relative_url }}">
+        <small>{{ post.date | date_to_string }}</small>
+      </a>
+    </td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
