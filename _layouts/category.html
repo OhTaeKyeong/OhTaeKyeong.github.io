@@ -9,16 +9,17 @@ layout: page
 <table border="1">
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
+  <th>제목</th>
+  <th>날짜</th>
   <tr>
+    <a href="{{ post.url | relative_url }}">
     <td>
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}</a>
+        {{ post.title }}
     </td>
-    <td>
-      <a href="{{ post.url | relative_url }}">
+    <td align="center">
         <small>{{ post.date | date_to_string }}</small>
-      </a>
     </td>
+    </a>
   </tr>
   {% endfor %}
 </table>
