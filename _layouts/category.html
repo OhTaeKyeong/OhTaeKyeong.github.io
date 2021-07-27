@@ -7,10 +7,8 @@ layout: page
 {% endunless %}
 
 <table border="1">
-  <tr align="center">
-  <th>글제목</th>
-  <th>작성일</th>
-  </tr>
+  <th align="center">글제목</th>
+  <th align="center">작성일</th>
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
   <tr align="center">
@@ -18,7 +16,7 @@ layout: page
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </td>
     <td>
-        <small>{{ post.date | date_to_string }}</small>
+      <small>{{ post.date | date_to_string }}</small>
     </td>
   </tr>
   {% endfor %}
