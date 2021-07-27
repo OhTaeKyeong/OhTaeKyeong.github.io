@@ -7,17 +7,23 @@ layout: page
 {% endunless %}
 
 <table border="1">
-  <th align="center">글제목</th>
-  <th align="center">작성일</th>
+  <thead>
+    <tr align="center">
+      <th>글제목</th>
+      <th>작성일</th>
+    </tr>
+  </thead>
   {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-  <tr align="center">
-    <td>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </td>
-    <td>
-      <small>{{ post.date | date_to_string }}</small>
-    </td>
-  </tr>
-  {% endfor %}
+  <tbody>
+    {% for post in site.categories[category] %}
+    <tr align="center">
+      <td>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </td>
+      <td>
+        <small>{{ post.date | date_to_string }}</small>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
 </table>
