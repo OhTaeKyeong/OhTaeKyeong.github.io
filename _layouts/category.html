@@ -6,9 +6,9 @@ layout: page
 {{ content }}
 {% endunless %}
 
-<table border="1">
+<table style="border: 1;">
   <thead>
-    <tr align="center">
+    <tr>
       <th>글제목</th>
       <th>작성일</th>
     </tr>
@@ -16,7 +16,7 @@ layout: page
   {% assign category = page.category | default: page.title %}
   <tbody>
     {% for post in site.categories[category] %}
-    <tr align="center">
+    <tr style="text-align: center;">
       <td>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </td>
