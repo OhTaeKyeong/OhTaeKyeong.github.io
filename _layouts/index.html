@@ -22,7 +22,7 @@ layout: default
             {{ post.title }}
           </a>
           &nbsp;&#47;&nbsp;
-          <small>
+          <small><small>
             {% if post.excerpt %}
             {{ post.excerpt }}
             {% else %}
@@ -38,12 +38,12 @@ layout: default
             {{ post.excerpt | number_of_words }}
             {% endcapture %}
             {% endif %}
-          </small>
+          </small></small>
         </td>
         <td>
-          <small>
+          <small><small>
             {% include post-meta.html post=post %}
-          </small>
+          </small></small>
         </td>
       </tr>
       {% endfor %}
