@@ -1,10 +1,8 @@
 ---
 layout: default
 ---
-
+<h1>전체 게시글</h1>
 <div class="content">
-  {% include pagination-newer.html %}
-
   {{ content }}
   <table style="border: 1;">
     <thead>
@@ -48,5 +46,5 @@ layout: default
       {% endfor %}
     </tbody>
   </table>
-  {% include pagination-older.html %}
+  {% include pagination.html %}
 </div>
