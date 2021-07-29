@@ -1,6 +1,7 @@
 <!-- See https://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html -->
 <!-- With added pipe to handle lack of sort_natural -->
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first | downcase }}|{{ tag | first }}{% unless forloop.last
+%},{% endunless %}{% endfor %}{% endcapture %}
 <!-- site_tags: {{ site_tags }} -->
 {% assign tag_words = site_tags | split:',' | sort %}
 <!-- tag_words: {{ tag_words }} -->
@@ -16,25 +17,33 @@
     {% endfor %}
   </div>
 
-  <hr/>
+  <hr />
 
   <div class="posts-by-tag">
     {% for tag_pair in tag_words %}
     {% assign tag = tag_pair | split:'|' | last %}
     <div id="{{ tag | slugify }}" class="posts-for-tag">
-      <h2>{{ tag }}</h2>
-      <ul class="posts-list">
-        {% for post in site.tags[tag] %}
-          <li>
-            <h3>
-              <a href="{{ post.url | relative_url }}">
-                {{ post.title }}
-                <small>{{ post.date | date_to_string }}</small>
-              </a>
-            </h3>
-          </li>
-        {% endfor %}
-      </ul>
+      <h2>{{ tag }}</h2>\
+      <table style="border: 1;">
+        <thead>
+          <tr>
+            <th>글제목</th>
+            <th>작성일</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for post in site.tags[tag] %}
+          <tr>
+            <td style="cursor:pointer;" onClick="location.href='{{ post.url | relative_url }}'">
+              {{ post.title }}<small><small>&nbsp;&#47;&nbsp;{{post.excerpt}}</small></small>
+            </td>
+            <td>
+              <small>{{ post.date | date_to_string }}</small>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
     {% endfor %}
   </div>
