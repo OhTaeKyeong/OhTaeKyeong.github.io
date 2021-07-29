@@ -20,8 +20,8 @@ layout: default
           <a href="{{ post.url | relative_url }}">
             {{ post.title }}
           </a>
-          &nbsp;&#47;&nbsp;
           <small><small>
+            &nbsp;&#47;&nbsp;
             {% if post.excerpt %}
             {{ post.excerpt }}
             {% else %}
@@ -39,7 +39,7 @@ layout: default
             {% endif %}
           </small></small>
         </td>
-        <td>
+        <td style="align-content: center;">
           <small><small>
             {% include post-meta.html post=post %}
           </small></small>
