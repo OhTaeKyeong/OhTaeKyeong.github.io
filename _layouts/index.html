@@ -2,6 +2,7 @@
 layout: default
 ---
 <h1>전체 게시글</h1>
+<hr>
 <div class="content">
   {{ content }}
   <table style="border: 1;">
@@ -46,5 +47,6 @@ layout: default
       {% endfor %}
     </tbody>
   </table>
+  <hr>
   {% include pagination.html %}
 </div>
