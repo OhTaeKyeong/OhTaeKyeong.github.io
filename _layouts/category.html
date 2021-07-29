@@ -18,7 +18,7 @@ layout: page
     {% for post in site.categories[category] %}
     <tr>
       <td style="cursor:pointer;" onClick="location.href='{{ post.url | relative_url }}'">
-        {{ post.title }}<small>&nbsp;-&nbsp;{{post.excerpt}}</small>
+        {{ post.title }}<small><small>&nbsp;&#47;&nbsp;{{post.excerpt}}</small></small>
       </td>
       <td>
         <small>{{ post.date | date_to_string }}</small>
