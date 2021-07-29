@@ -7,39 +7,44 @@ layout: default
 
   {{ content }}
   <table style="border: 1;">
-    {% for post in paginator.posts %}
-    <tr>
-      <td>
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title }}
-        </a>
-      </td>
-      <td>
-        {% include post-meta.html post=post %}
-      </td>
-      <td>
-        {% if post.excerpt %}
-        {{ post.excerpt }}
-        {% else %}
-        {{ post.content }}
-        {% endif %}
+    <thead>
+      <tr>
+        <th>글제목</th>
+        <th>내용</th>
+        <th>게시날짜 / 태그</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for post in paginator.posts %}
+      <tr>
+        <td>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title }}
+          </a>
+        </td>
+        <td>
+          {% if post.excerpt %}
+          {{ post.excerpt }}
+          {% else %}
+          {{ post.content }}
+          {% endif %}
 
-        {% if post.excerpt %}
-        {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-        {% capture content_words %}
-        {{ post.content | number_of_words }}
-        {% endcapture %}
-        {% capture excerpt_words %}
-        {{ post.excerpt | number_of_words }}
-        {% endcapture %}
-
-        {% if content_words != excerpt_words %}
-        <a href="{{ post.url | relative_url }}">&nbsp;더보기 &hellip;</a>
-        {% endif %}
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
+          {% if post.excerpt %}
+          {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
+          {% capture content_words %}
+          {{ post.content | number_of_words }}
+          {% endcapture %}
+          {% capture excerpt_words %}
+          {{ post.excerpt | number_of_words }}
+          {% endcapture %}
+          {% endif %}
+        </td>
+        <td>
+          {% include post-meta.html post=post %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
   </table>
   {% include pagination-older.html %}
 </div>
