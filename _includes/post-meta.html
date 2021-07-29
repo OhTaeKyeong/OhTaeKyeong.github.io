@@ -1,7 +1,7 @@
 <span class="post-date">{{ include.post.date | date_to_string }}</span>
 <span class="post-categories">
   {% for category in include.post.categories %}
-    &nbsp;&#47;&nbsp;&bull;
+    &nbsp;&#47;&nbsp;
     {% comment %}
       Check if this category has a corresponding page before decide
       to link to it. This is an O(n^2) operations so consider removing
