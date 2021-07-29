@@ -20,28 +20,26 @@ layout: default
             {{ post.title }}
           </a>
           <small><small>
-            &nbsp;&#47;&nbsp;
-            {% if post.excerpt %}
-            {{ post.excerpt }}
-            {% else %}
-            {{ post.content }}
-            {% endif %}
+              &nbsp;&#47;&nbsp;
+              {% if post.excerpt %}
+              {{ post.excerpt }}
+              {% else %}
+              {{ post.content }}
+              {% endif %}
 
-            {% if post.excerpt %}
-            {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
-            {% capture content_words %}
-            {{ post.content | number_of_words }}
-            {% endcapture %}
-            {% capture excerpt_words %}
-            {{ post.excerpt | number_of_words }}
-            {% endcapture %}
-            {% endif %}
-          </small></small>
+              {% if post.excerpt %}
+              {% comment %}Excerpt may be equal to content. Check.{% endcomment %}
+              {% capture content_words %}
+              {{ post.content | number_of_words }}
+              {% endcapture %}
+              {% capture excerpt_words %}
+              {{ post.excerpt | number_of_words }}
+              {% endcapture %}
+              {% endif %}
+            </small></small>
         </td>
         <td>
-          <small>
-            {% include post-meta.html post=post %}
-          </small>
+          {% include post-meta.html post=post %}
         </td>
       </tr>
       {% endfor %}
