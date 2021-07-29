@@ -6,6 +6,7 @@
     </a>
   </button>
   {% endif %}
+  {{ paginator.page }} / {{ paginator.total_pages }}
   {% if paginator.next_page %}
   <button>
     <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
