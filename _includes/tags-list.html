@@ -34,8 +34,9 @@
         <tbody>
           {% for post in site.tags[tag] %}
           <tr>
-            <td style="cursor:pointer;" onClick="location.href='{{ post.url | relative_url }}'">
-              {{ post.title }}<small><small>&nbsp;&#47;&nbsp;{{post.excerpt}}</small></small>
+            <td>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}<a>
+              <small><small>&nbsp;&#47;&nbsp;{{post.excerpt}}</small></small>
             </td>
             <td>
               <small>{{ post.date | date_to_string }}</small>
