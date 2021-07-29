@@ -47,6 +47,7 @@ layout: default
       {% endfor %}
     </tbody>
   </table>
+  {{ paginator.page }} / {{ paginator.total_pages }}
   <hr>
   {% include pagination.html %}
 </div>
