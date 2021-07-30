@@ -2,7 +2,7 @@
   {% if paginator.previous_page %}
   <button type="button" onclick="location.href='{{ paginator.previous_page_path | relative_url }}'" style="float: left;">
     <a class="pagination-item newer" href="{{ paginator.previous_page_path | relative_url }}">
-      &laquo; 최신글 페이지
+      &laquo; 이전
     </a>
   </button>
   {% endif %}
@@ -10,7 +10,7 @@
   {% if paginator.next_page %}
   <button type="button" onclick="location.href='{{ paginator.next_page_path | relative_url }}'" style="float: right;">
     <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
-      이전글 페이지 &raquo;
+      다음 &raquo;
     </a>
   </button>
   {% endif %}
