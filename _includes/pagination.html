@@ -6,7 +6,9 @@
     </a>
   </button>
   {% endif %}
-  {{ paginator.page }} / {{ paginator.total_pages }}
+  <div>
+    {{ paginator.page }} / {{ paginator.total_pages }}
+  </div>
   {% if paginator.next_page %}
   <button type="button" onclick="location.href='{{ paginator.next_page_path | relative_url }}'" style="float: right;">
     <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
