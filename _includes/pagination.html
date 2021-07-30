@@ -1,16 +1,16 @@
 <div style="text-align: center;">
+  {{ paginator.page }} / {{ paginator.total_pages }}
+</div>
+<div style="display: flex; justify-content: space-between;">
   {% if paginator.previous_page %}
-  <button type="button" onclick="location.href='{{ paginator.previous_page_path | relative_url }}'" style="float: left;">
+  <button type="button" onclick="location.href='{{ paginator.previous_page_path | relative_url }}'">
     <a class="pagination-item newer" href="{{ paginator.previous_page_path | relative_url }}">
       &laquo; 이전
     </a>
   </button>
   {% endif %}
-  <div>
-    {{ paginator.page }} / {{ paginator.total_pages }}
-  </div>
   {% if paginator.next_page %}
-  <button type="button" onclick="location.href='{{ paginator.next_page_path | relative_url }}'" style="float: right;">
+  <button type="button" onclick="location.href='{{ paginator.next_page_path | relative_url }}'">
     <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">
       다음 &raquo;
     </a>
