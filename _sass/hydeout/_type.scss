@@ -10,7 +10,7 @@ h5,
 h6,
 .site-title {
   color: $heading-color;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.25;
   margin-bottom: $heading-spacing;
   text-rendering: optimizeLegibility;
@@ -121,7 +121,7 @@ a[href^='#fnref:'] {
 // Extend paragraphs with `.lead` for larger introductory text.
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
