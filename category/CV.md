@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Computer Vision
+title: CV
 ---
 
 Computer Vision & Deep Learning

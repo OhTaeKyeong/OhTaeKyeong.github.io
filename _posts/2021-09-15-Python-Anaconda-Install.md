@@ -3,9 +3,9 @@ layout: post
 title: "[Anaconda] 설치하기"
 excerpt: "설치 후 주피터 실행하기"
 categories:
-- Python
+- Others
 tags:
-- Python
+- Others
 - Anaconda
 last_modified_at: 2021-09-15T20:21:00+09:00
 comments : true

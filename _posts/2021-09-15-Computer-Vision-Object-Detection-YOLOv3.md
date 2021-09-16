@@ -3,7 +3,7 @@ layout: post
 title: "[Object Detection] YOLOv3"
 excerpt: "환경 세팅, Custom Dataset 학습하기"
 categories:
-- Computer Vision
+- CV
 tags:
 - Computer Vision
 - Object Detection
