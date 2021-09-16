@@ -17,7 +17,7 @@ comments : true
     <ol type="i">
         <li>
             <h4>Anaconda3</h4>
-            <p>: YOLOv3가 정상적으로 작동하기 위해 낮은 버전의 Python과 기타 라이브러리들이 설치되어야 하기 때문에 가상환경을 만들어서 관리해 주어야 한다.</p>
+            <p>: YOLOv3가 정상적으로 작동하기 위해서는 낮은 버전의 Python과 기타 라이브러리들이 설치되어야 하기 때문에 가상환경을 만들어서 관리해 주어야 한다.</p>
         </li>
         <li>
             <h4>Python 3.6 + Tensorflow 1.15.0 + Keras 2.2.4</h4>
@@ -25,12 +25,13 @@ comments : true
         </li>
         <li>
             <h4>CUDA 10.0 + cuDNN 7.6.2</h4>
-            <p>: CPU를 사용한다면 설치하지 않아도 되지만, GPU를 사용하는 것이 학습속도가 체감상 10배는 빠른 것 같다. Tensorflow 1.15.0을 지원하는 최신버전 Cuda는 10.0이고, cuDNN은 CUDA 버전에 호환되는 것을 설치하면 된다.</p>
-            <p>+ GPU에 따라서 지원하는 CUDA가 다른 것 같다. 여기서는 Geforce gtx-1060을 사용하였다. 만약 CUDA 10.0을 지원하지 않는 GPU를 사용하고 있다면 여기서 사용하는 코드로는 YOLOv3를 절대절대절대 돌릴 수 없다.</p>
+            <p>: CPU를 사용한다면 설치하지 않아도 되지만, GPU를 사용하는 것이 학습속도가 체감상 10배는 빠른 것 같다. Tensorflow 1.15.0을 지원하는 최신버전의 CUDA는 10.0이고, cuDNN은 CUDA 버전에 호환되는 것을 설치하면 된다.</p>
+            <p><small>+ GPU에 따라서 지원하는 CUDA가 다른 것 같다. 여기서는 Geforce gtx-1060을 사용하였다. 만약 CUDA 10.0을 지원하지 않는 GPU를 사용하고 있다면 본 게시글에서 사용하는 코드로는 YOLOv3를 절대 학습시킬 수 없다.</small></p>
         </li>
     </ol>
 </div>
-<hr>
+<br>
+
 <div>
     <h2>Anaconda 설치하기</h2>
     
