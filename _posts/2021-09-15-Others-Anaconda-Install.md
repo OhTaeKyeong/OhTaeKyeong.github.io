@@ -23,7 +23,7 @@ comments : true
 <h2>Anaconda 설치하기</h2>
 <h4>사이트 접속 후 설치</h4>
 <div style="text-align: center;">
-    <img style="margin: 0px auto;" src="/assets/post-image/Python-Anaconda-Install/Anaconda사이트.png">
+    <img src="/assets/post-image/Python-Anaconda-Install/Anaconda사이트.png">
 </div>
 <p><a href = "https://www.anaconda.com/products/individual-d#download-section" target = "blank" >https://www.anaconda.com/products/individual-d#download-section</a> 로 접속</p>
 
