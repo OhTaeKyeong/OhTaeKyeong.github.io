@@ -66,7 +66,7 @@ comments : true
 </div>
 
 <br>
-<h4>아나콘다 실행</h4>
+<h4>아나콘다 프롬프트 실행</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/cmd.PNG">
 </div>
