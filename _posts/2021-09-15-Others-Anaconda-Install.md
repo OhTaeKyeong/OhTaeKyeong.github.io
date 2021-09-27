@@ -21,14 +21,14 @@ comments : true
 <br>
 <br>
 <h2>Anaconda 설치하기</h2>
-<h4>사이트 접속 후 설치</h4>
+<h4>- 사이트 접속 후 설치</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/Anaconda사이트.png">
 </div>
 <p><a href = "https://www.anaconda.com/products/individual-d#download-section" target = "blank" >https://www.anaconda.com/products/individual-d#download-section</a> 로 접속</p>
 
 <br>
-<h4>다운로드 후 Install 진행</h4>
+<h4>- 다운로드 후 Install 진행</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/Setup1.PNG">
 </div>
@@ -60,13 +60,13 @@ comments : true
 <br>
 <br>
 <h2>아나콘다 실행하기</h2>
-<h4>시작 메뉴에서 새로 설치된 항목 확인</h4>
+<h4>- 시작 메뉴에서 새로 설치된 항목 확인</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/Folder_list.png">
 </div>
 
 <br>
-<h4>아나콘다 프롬프트 실행</h4>
+<h4>- 아나콘다 프롬프트 실행</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/cmd.PNG">
 </div>
