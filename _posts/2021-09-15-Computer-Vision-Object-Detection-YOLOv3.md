@@ -34,6 +34,9 @@ comments : true
 
 <div>
     <h2>Anaconda 설치하기</h2>
+    <div style="text-align: center;">
+        <img src="/assets/post-image/CV-Object-Detection/logo-anaconda.png">
+    </div>
     <p><a href = "https://ohtaekyeong.github.io/others/2021/09/15/Others-Anaconda-Install.html" target = "blank" >[Anaconda] 설치하기</a>게시글을 참고하여 아나콘다 설치를 진행한다.</p>
 </div>
 <br>
@@ -41,6 +44,9 @@ comments : true
 <div>
     <h2>GPU 환경 세팅</h2>
     <h4>- CUDA 10.0 설치</h4>
-    <p><a href = "https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal" target = "blank" >https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal</a>로 접속하여 윈도우 환경</p>
+    <div style="text-align: center;">
+        <img src="/assets/post-image/Python-Anaconda-Install/logo-anaconda.png">
+    </div>
+    <p><a href = "https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal" target = "blank" >https://developer.nvidia.com/cuda-10.0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal</a>로 접속하여 윈도우 환경으로 다운로드 후 설치한다.</p>
 </div>
 <br>
