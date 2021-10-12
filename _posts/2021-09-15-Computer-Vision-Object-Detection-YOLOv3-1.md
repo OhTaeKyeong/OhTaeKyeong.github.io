@@ -77,7 +77,6 @@ comments : true
     <img src="/assets/post-image/CV-Object-Detection-YOLOv3/conda_create.png">
 </div>
 <p>설치된 Anaconda Prompt를 열면 (base)라는 기본 환경이 열려있을 것인데, 우리는 "YOLOv3"라는 이름의 가상환경을 만들어서 별도로 라이브러리를 설치하고 관리해줄 것이다. Python은 3.6버전으로 설치하며, 가상환경 실행 후 (base)환경이 (YOLOv3)환경으로 바뀌면 성공이다.</p>
-<br>
 
 ```md
 conda create -n YOLOv3 python=3.6
@@ -86,7 +85,7 @@ conda activate YOLOv3
 
 <br>
 <h4>- TF, Keras 및 기타 라이브러리 설치</h4>
-<p>CUDA 10.0이 작동하는 가장 최신버전의 텐서플로는 1.15.0이며, Keras의 버전은 2.2.4보다 낮아서도 높아서도 안 된다는 것을 확인했다. 이후 자동으로 설치되는 tensorflow-estimator와 h5py를 다운그레이드 해주어야 코드상의 에러가 발생하지 않는다. 이미지와 그래프를 다루기 위해 pillow, matplotlib, opencv를 설치해주고, 주피터 노트북에서 환경을 테스트할 것이다.</p>
+<p>CUDA 10.0이 작동하는 가장 최신버전의 텐서플로는 1.15.0이며, Keras의 버전은 2.2.4보다 낮아서도 높아서도 안 된다는 것을 확인했다. 이후 자동으로 설치되는 tensorflow-estimator와 h5py를 다운그레이드 해주어야 코드상의 에러가 발생하지 않는다. 이후 이미지와 그래프를 다루기 위해 pillow, matplotlib, opencv를 설치해주고, 주피터 노트북에서 환경을 테스트할 것이다. 주피터 커널 연결의 편의성을 위해 반드시 주피터 노트북을 마지막 순서에 설치해야 한다는 점을 주의하자!</p>
 
 ```md
 conda install tensorflow-gpu==1.15.0
