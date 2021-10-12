@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Object Detection] YOLOv3"
-excerpt: "환경 세팅, Custom Dataset 학습하기"
+title: "[Object Detection] YOLOv3 (1)"
+excerpt: "환경 세팅"
 categories:
 - CV
 tags:
@@ -79,9 +79,9 @@ comments : true
     <br>
 </div>
 
-'''md
+```md
 conda create -n YOLOv3 python=3.6
 conda activate YOLOv3
-'''
+```
 
 <br>
