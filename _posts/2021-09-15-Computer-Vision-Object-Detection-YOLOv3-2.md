@@ -61,11 +61,11 @@ comments : true
         <img src="/assets/post-image/CV-Object-Detection-YOLOv3/cuDNN_Releases.png">
     </div>
     <p><a href = "https://developer.nvidia.com/cudnn" target = "blank" >https://developer.nvidia.com/cudnn</a>로 접속하여 Download cuDNN을 누른다. 회원가입 후 설문조사를 하는 복잡한 과정이 요구된다.. Archived cuDNN Releases를 누른 다음 설치된 CUDA에 맞는 버전을 아무거나 골라 설치해도 되지만, 7.6.2버전을 추천한다.</p>
+    <br>
     <div style="text-align: center;">
         <img src="/assets/post-image/CV-Object-Detection-YOLOv3/cuDNN_file.png">
     </div>
-    <p>다운로드 된 압축파일을 풀고 해당 파일을 CUDA가 설치된 경로(C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\)에 복사 붙여넣기를 해주면 cuDNN의 설치가 완료된다.</p>
+    <p>다운로드 된 압축파일을 풀고 해당 파일을 CUDA가 설치된 경로(C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0)에 복사 붙여넣기를 해주면 cuDNN의 설치가 완료된다.</p>
     <br>
 </div>
 <br>
-\
