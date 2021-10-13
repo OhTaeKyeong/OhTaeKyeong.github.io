@@ -132,7 +132,7 @@ jupyter notebook
 </div>
 <p>tensorflow 라이브러리를 통해 CUDA가 컴퓨터 내의 GPU를 정상적으로 인식하고 있는지 테스트하기 위해 코드를 입력하여 확인한다. 자신의 컴퓨터가 사용하고 있는 그래픽카드 정보를 출력하고 있다면 YOLOv3를 실행할 수 있는 모든 환경세팅이 끝난 것이다. 참고로 현재 셀 실행 단축키는 "ctrl+ENTER"이고, 아래에 셀 삽입 단축키는 "b"이다.</p>
 
-'''python
+```python
 import tensorflow as tf
 
 with tf.device('GPU:0'):
@@ -141,13 +141,8 @@ with tf.device('GPU:0'):
 from tensorflow.python.client import device_lib
 
 device_lib.list_local_devices()
-'''
+```
 
 <br>
-
-
-
-
-
 
 <br>
