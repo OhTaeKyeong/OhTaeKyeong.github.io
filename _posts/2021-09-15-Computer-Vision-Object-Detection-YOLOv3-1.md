@@ -85,7 +85,7 @@ conda activate YOLOv3
 
 <br>
 <h4>- TF, Keras 및 기타 라이브러리 설치</h4>
-<p>CUDA 10.0이 작동하는 가장 최신버전의 텐서플로는 1.15.0이며, Keras의 버전은 2.2.4보다 낮아서도 높아서도 안 된다는 것을 확인했다. 이후 자동으로 설치되는 tensorflow-estimator와 h5py를 다운그레이드 해주어야 코드상의 에러가 발생하지 않는다. 이후 이미지와 그래프를 다루기 위해 pillow, matplotlib, opencv를 설치해주고, 주피터 노트북에서 환경을 테스트할 것이다. 주피터 커널 연결의 편의성을 위해 반드시 주피터 노트북을 마지막 순서에 설치해야 한다는 점을 주의하자!</p>
+<p>CUDA 10.0이 작동하는 가장 최신버전의 텐서플로는 1.15.0이며, Keras의 버전은 2.2.4보다 낮아서도 높아서도 안 된다는 것을 확인했다. 또한 자동으로 설치되는 tensorflow-estimator와 h5py를 다운그레이드 해주어야 코드상의 에러가 발생하지 않는다. 이후 이미지와 그래프를 다루기 위해 pillow, matplotlib, opencv를 설치해주고, 주피터 노트북에서 환경을 테스트할 것이다. 주피터 커널 연결의 편의성을 위해 반드시 주피터 노트북을 마지막 순서에 설치해야 한다는 점을 주의하자!</p>
 
 ```md
 conda install tensorflow-gpu==1.15.0
@@ -95,7 +95,39 @@ conda install -c conda-forge pillow
 conda install -c conda-forge matplotlib
 conda install h5py==2.10.0
 conda install -c conda-forge opencv
+conda install -c conda-forge pandas
 conda install jupyter
 ```
+
+<br>
+<br>
+<h2>Jupyter Notebook 환경 테스트</h2>
+<h4>- 작업 폴더 생성</h4>
+<div style="text-align: center;">
+    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/mkdir_jupyter.png">
+</div>
+<div style="text-align: center;">
+    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/mkdir_jupyter.png">
+</div>
+<p>주피터 노트북 작업 전용 폴더를 하나 생성하자. 경로 이동을 따로 하지 않았다면 User 폴더가 현재 경로로 지정되어있을 것인데, 우리는 여기에 "jupyternotebook"이라는 폴더를 생성할 것이다. cd 명령어로 생성한 폴더로 경로를 이동해주고 주피터 노트북이 정상적으로 실행된다면 성공이다.</p>
+
+```md
+mkdir jupyternotebook
+cd jupyternotebook
+jupyter notebook
+```
+
+
+import tensorflow as tf
+with tf.device('GPU:0'):
+    sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
+<br>
+
+
+
+
+
 
 <br>
