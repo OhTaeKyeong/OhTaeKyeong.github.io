@@ -106,10 +106,7 @@ conda install jupyter
 <div style="text-align: center;">
     <img src="/assets/post-image/CV-Object-Detection-YOLOv3/mkdir_jupyter.png">
 </div>
-<div style="text-align: center;">
-    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/mkdir_jupyter.png">
-</div>
-<p>주피터 노트북 작업 전용 폴더를 하나 생성하자. 경로 이동을 따로 하지 않았다면 User 폴더가 현재 경로로 지정되어있을 것인데, 우리는 여기에 "jupyternotebook"이라는 폴더를 생성할 것이다. cd 명령어로 생성한 폴더로 경로를 이동해주고 주피터 노트북이 정상적으로 실행된다면 성공이다.</p>
+<p>주피터 노트북 작업 전용 폴더를 하나 생성하자. 경로 이동을 따로 하지 않았다면 User 폴더가 현재 경로로 지정되어있을 것인데, 우리는 여기에 "jupyternotebook"이라는 폴더를 생성할 것이다. cd 명령어를 통해 경로를 생성한 폴더로 이동해주고나서, "jupyter notebook"명령어를 입력하여 주피터 노트북이 정상적으로 실행되는 것을 확인한다.</p>
 
 ```md
 mkdir jupyternotebook
@@ -117,12 +114,35 @@ cd jupyternotebook
 jupyter notebook
 ```
 
+<br>
+<div style="text-align: center;">
+    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/jupyter_main.png">
+</div>
+<p>주피터 노트북 메인 화면 오른쪽 "New"에서 Python3를 눌러 새로운 노트북 파일을 생성한다.</p>
+<br>
+<div style="text-align: center;">
+    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/jupyter_new.png">
+</div>
+<p>위와 같은 화면이 나타난다면 성공이다.</p>
 
+<br>
+<h4>- GPU 동작 테스트</h4>
+<div style="text-align: center;">
+    <img src="/assets/post-image/CV-Object-Detection-YOLOv3/jupyter_GPU.png">
+</div>
+<p>tensorflow 라이브러리를 통해 CUDA가 컴퓨터 내의 GPU를 정상적으로 인식하고 있는지 테스트하기 위해 코드를 입력하여 확인한다. 자신의 컴퓨터가 사용하고 있는 그래픽카드 정보를 출력하고 있다면 YOLOv3를 실행할 수 있는 모든 환경세팅이 끝난 것이다. 참고로 현재 셀 실행 단축키는 "ctrl+ENTER"이고, 아래에 셀 삽입 단축키는 "b"이다.</p>
+
+'''python
 import tensorflow as tf
+
 with tf.device('GPU:0'):
     sess = tf.Session(config=tf.ConfigProto(allow_soft_placement=True, log_device_placement=True))
+
 from tensorflow.python.client import device_lib
+
 device_lib.list_local_devices()
+'''
+
 <br>
 
 
