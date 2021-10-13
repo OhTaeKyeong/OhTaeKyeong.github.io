@@ -56,6 +56,7 @@ comments : true
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/Setup9.PNG">
 </div>
+<p>별도의 과정없이 설치를 쭉 진행하면 된다.</p>
 
 <br>
 <br>
@@ -64,11 +65,13 @@ comments : true
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/Folder_list.png">
 </div>
+<p>Anaconda Prompt를 클릭하여 실행</p>
 
 <br>
 <h4>- 아나콘다 프롬프트 실행</h4>
 <div style="text-align: center;">
     <img src="/assets/post-image/Python-Anaconda-Install/cmd.PNG">
 </div>
+<p>Anaconda Prompt를 클릭하면 cmd 창이 뜨고 (base) 환경으로 실행이 될 것이다. 아나콘다는 주피터 노트북이 기본으로 설치되어있기 때문에, jupyter notebook 이라는 명령어를 입력하여 노트북이 정상적으로 실행되는 것 까지 확인된다면 성공적으로 Anaconda설치가 된 것이다.</p>
 
 <br>
