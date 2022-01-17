@@ -106,7 +106,7 @@ conda install jupyter
 <div style="text-align: center;">
     <img src="/assets/post-image/CV-Object-Detection-YOLOv3/mkdir_jupyter.png">
 </div>
-<p>주피터 노트북 작업 전용 폴더를 하나 생성하자. 경로 이동을 따로 하지 않았다면 User 폴더가 현재 경로로 지정되어있을 것인데, 우리는 여기에 "jupyternotebook"이라는 폴더를 생성할 것이다. cd 명령어를 통해 경로를 생성한 폴더로 이동해주고나서, "jupyter notebook"명령어를 입력하여 주피터 노트북이 정상적으로 실행되는 것을 확인한다.</p>
+<p>주피터 노트북 작업 전용 폴더를 하나 생성하자. 경로 이동을 따로 하지 않았다면 User 폴더가 현재 경로로 지정되어있을 것인데, 우리는 여기에 "jupyternotebook"이라는 폴더를 생성할 것이다. 이후 cd 명령어를 통해 방금 생성한 폴더(jupyternotebook)로 경로를 이동해주고나서, "jupyter notebook"명령어를 입력하여 주피터 노트북이 정상적으로 실행되는 것을 확인한다.</p>
 
 ```md
 mkdir jupyternotebook
